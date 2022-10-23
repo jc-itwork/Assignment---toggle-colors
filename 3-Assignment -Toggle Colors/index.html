@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Toggle Colors</title>
+</head>
+<body id="body" class="greyBack" onkeydown="myKey(event)">
+  
+  <nav class="nav-main">
+    <div class="btn-toggle-nav" onmouseover="toggleNav()" ondblclick="toggleNav()"> 
+    </div>
+
+</nav>
+<aside class="nav-sidebar">
+ 
+  <ul>
+    <li>
+      <button id="1" onclick="color(this)"  class="color clr1">
+        <input type="radio" id="home" name="color-options" value="Home"><label> Home</label>
+      </button>
+     </li>
+    <li> 
+      <button id="2" onclick="color(this)"  class="color clr2">
+      <input type="radio"  id="red" name="color-options" value="Red" checked><label>Red</label>
+      </button>
+   </li>
+   <li>  
+   <button id="3" onclick="color(this)"  class="color clr3">
+      <input type="radio" id="orange" name="color-options" value="Orange"><label>Orange</label>
+      </button>
+   </li>
+   <li>
+    <button id="4" onclick="color(this)" class="color clr4">
+      <input type="radio" id="purple" name="color-options" value="Purple"><label>Purple</label>
+      </button>
+   </li>
+   <li> 
+   <button id="5" onclick="color(this)" class="color clr5">
+      <input type="radio" id="green" name="color-options" value="Green"><label>Green</label>
+      </button>
+   </li>
+  </ul>
+</aside>
+  </body>
+ 
+</html>
